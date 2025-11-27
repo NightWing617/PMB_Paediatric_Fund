@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB Paediatric Fund - Bringing Light to Hospitalized Children</title>
+    <meta name="description"
+        content="We Serve. We Care. Children Win. Bringing dignity and joy to hospitalized children and caregivers in Pietermaritzburg.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'slate-blue': '#2C4A63',
+                        'muted-orange': '#F29F67',
+                        'mustard-gold': '#EBC472',
+                        'bubblegum-pink': '#FA9BC5',
+                        'festive-red': '#E92B38',
+                        'muted-teal': '#6FA8AA'
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                        'wiggle': 'wiggle 0.5s ease-in-out'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-white">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section
+        class="relative bg-gradient-to-br from-slate-blue via-muted-teal to-slate-blue text-white overflow-hidden pattern-dots">
+        <!-- Animated Background Blobs -->
+        <div
+            class="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-muted-orange/20 to-mustard-gold/20 rounded-full blur-3xl float">
+        </div>
+        <div class="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-bubblegum-pink/20 to-festive-red/20 rounded-full blur-3xl"
+            style="animation: float 4s ease-in-out infinite;"></div>
+
+        <div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-5xl md:text-7xl font-black leading-tight">
+                        A Little <span class="gradient-text-gold">Light</span> at the Bedside
+                    </h1>
+                    <p class="text-xl md:text-2xl opacity-95 leading-relaxed">
+                        We Serve. We Care. Children Win. Bringing dignity and joy to hospitalized children and
+                        caregivers in Pietermaritzburg.
+                    </p>
+                    <div class="space-y-4">
+                        <a href="#donate"
+                            class="inline-block bg-gradient-to-r from-muted-orange to-mustard-gold hover:from-mustard-gold hover:to-muted-orange text-slate-blue font-bold py-5 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl pulse-glow ripple">
+                            💝 Donate a Box (R150)
+                        </a>
+                        <p class="text-sm opacity-80 flex items-center gap-2">
+                            <span class="text-2xl">✨</span>
+                            R150 = 1 Complete Care Package (Child + Caregiver)
+                        </p>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex gap-6 items-center pt-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text-gold" data-target="150">150+</div>
+                            <div class="text-sm opacity-75">Boxes Delivered</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text-gold" data-target="3">3</div>
+                            <div class="text-sm opacity-75">Hospitals Served</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text-gold" data-target="100">100%</div>
+                            <div class="text-sm opacity-75">Transparency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Main Image with 3D Effect -->
+                    <div class="relative z-10">
+                        <div
+                            class="glass-white rounded-3xl p-3 shadow-3d transform hover:scale-105 transition-all duration-500 card-3d">
+                            <img src="http://static.photos/medical/640x360/1" alt="Caregiver and child in hospital"
+                                class="w-full h-72 md:h-96 object-cover rounded-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Floating Decorative Elements -->
+                    <div
+                        class="absolute -top-6 -right-6 bg-gradient-to-br from-mustard-gold to-muted-orange rounded-2xl w-20 h-20 flex items-center justify-center shadow-xl float z-20">
+                        <span class="text-4xl">☀️</span>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-gradient-to-br from-bubblegum-pink to-festive-red rounded-2xl w-20 h-20 flex items-center justify-center shadow-xl z-20"
+                        style="animation: float 2.5s ease-in-out infinite;">
+                        <span class="text-4xl">❤️</span>
+                    </div>
+
+                    <!-- Subtle Background Circle -->
+                    <div
+                        class="absolute top-1/2 left-1/2 w-full h-full bg-gradient-to-br from-muted-orange/10 to-transparent rounded-full blur-2xl transform -translate-x-1/2 -translate-y-1/2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Christmas Campaign Section -->
+    <section
+        class="relative bg-gradient-to-br from-bubblegum-pink via-festive-red/10 to-bubblegum-pink overflow-hidden">
+        <!-- Background Blobs -->
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-festive-red rounded-full opacity-20 transform translate-x-32 -translate-y-32 blur-2xl">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-48 h-48 bg-festive-red rounded-full opacity-30 transform -translate-x-24 translate-y-24 blur-2xl">
+        </div>
+
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black text-festive-red mb-6 wiggle"
+                    style="font-family: 'Permanent Marker', cursive; text-shadow: 3px 3px 0px rgba(0,0,0,0.1);">
+                    🎄 Christmas 2025: Play it Forward
+                </h2>
+                <p class="text-xl md:text-2xl text-slate-blue max-w-3xl mx-auto leading-relaxed">
+                    Join us this festive season in spreading cheer to children undergoing surgery at Greys, Harry Gwala,
+                    and Northdale Hospitals.
+                </p>
+            </div>
+
+            <!-- What's in the Box Grid -->
+            <div class="max-w-5xl mx-auto">
+                <div class="glass-white rounded-3xl shadow-3d p-10 hover-lift">
+                    <h3 class="text-4xl font-black text-slate-blue mb-10 text-center shimmer">
+                        <span class="text-4xl mr-2">🎁</span> What's in the Box?
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Child Items -->
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="bg-gradient-to-br from-mustard-gold to-muted-orange rounded-2xl w-16 h-16 flex items-center justify-center shadow-lg hover-scale">
+                                    <span class="text-3xl">🧸</span>
+                                </div>
+                                <h4 class="text-2xl font-bold text-slate-blue">For the Child</h4>
+                            </div>
+                            <ul class="space-y-4">
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-mustard-gold/10 transition-all duration-300">
+                                    <div class="bg-muted-orange/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-orange" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Cuddly Teddy Bear</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-mustard-gold/10 transition-all duration-300">
+                                    <div class="bg-muted-orange/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-orange" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Delicious Sweets</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-mustard-gold/10 transition-all duration-300">
+                                    <div class="bg-muted-orange/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-orange" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Fun Coloring Book</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-mustard-gold/10 transition-all duration-300">
+                                    <div class="bg-muted-orange/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-orange" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Bright Crayons</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Caregiver Items -->
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="bg-gradient-to-br from-muted-teal to-slate-blue rounded-2xl w-16 h-16 flex items-center justify-center shadow-lg hover-scale">
+                                    <span class="text-3xl">🪥</span>
+                                </div>
+                                <h4 class="text-2xl font-bold text-slate-blue">For the Caregiver</h4>
+                            </div>
+                            <ul class="space-y-4">
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-muted-teal/10 transition-all duration-300">
+                                    <div class="bg-muted-teal/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-teal" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Fresh Toothbrush</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-muted-teal/10 transition-all duration-300">
+                                    <div class="bg-muted-teal/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-teal" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Mint Toothpaste</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-muted-teal/10 transition-all duration-300">
+                                    <div class="bg-muted-teal/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-teal" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Clean Face Cloth</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-muted-teal/10 transition-all duration-300">
+                                    <div class="bg-muted-teal/20 rounded-full p-2">
+                                        <svg class="w-6 h-6 text-muted-teal" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-lg font-medium">Airtime Voucher</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Transparency Section -->
+    <section class="bg-gradient-to-b from-slate-blue to-slate-blue/90 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black mb-6">Our Impact 💫</h2>
+                <p class="text-2xl opacity-90 max-w-2xl mx-auto">150 Boxes of Blessings delivered last year. Help us
+                    beat that goal.</p>
+            </div>
+
+            <!-- Masonry Gallery with Enhanced Cards -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <div class="break-inside-avoid">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover-lift card-3d group">
+                        <div class="relative overflow-hidden">
+                            <img src="http://static.photos/children/320x240/1" alt="Child receiving gift"
+                                class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <p class="text-white font-bold">Brightening hospital stays ✨</p>
+                            </div>
+                        </div>
+                        <div class="p-5 text-slate-blue">
+                            <p class="font-bold text-lg">Brightening hospital stays</p>
+                            <p class="text-sm opacity-75 mt-1">Making difficult times a little easier</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break-inside-avoid">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover-lift card-3d group">
+                        <div class="relative overflow-hidden">
+                            <img src="http://static.photos/children/320x240/2" alt="Child with teddy bear"
+                                class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-bubblegum-pink/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <p class="text-white font-bold">Bringing smiles 😊</p>
+                            </div>
+                        </div>
+                        <div class="p-5 text-slate-blue">
+                            <p class="font-bold text-lg">Bringing smiles to little faces</p>
+                            <p class="text-sm opacity-75 mt-1">Every child deserves joy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break-inside-avoid">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover-lift card-3d group">
+                        <div class="relative overflow-hidden">
+                            <img src="http://static.photos/medical/320x240/3" alt="Caregiver and child"
+                                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-muted-teal/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <p class="text-white font-bold">Supporting families 👨‍👩‍👧</p>
+                            </div>
+                        </div>
+                        <div class="p-5 text-slate-blue">
+                            <p class="font-bold text-lg">Supporting families in need</p>
+                            <p class="text-sm opacity-75 mt-1">Together we're stronger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate"
+        class="relative bg-gradient-to-br from-mustard-gold via-muted-orange to-festive-red py-20 overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 pattern-grid opacity-20"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-5xl mx-auto">
+                <div class="glass-white rounded-3xl shadow-3d p-10 md:p-12">
+                    <h2 class="text-5xl font-black text-slate-blue mb-4 text-center">
+                        Make a Difference Today 🌟
+                    </h2>
+                    <p class="text-center text-slate-blue/80 text-lg mb-12 max-w-2xl mx-auto">
+                        Your donation brings light, comfort, and dignity to children and their caregivers during
+                        challenging times.
+                    </p>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Bank Details -->
+                        <div class="space-y-8">
+                            <h3 class="text-3xl font-bold text-slate-blue flex items-center gap-3">
+                                <span class="text-4xl">🏦</span> Banking Details
+                            </h3>
+                            <div
+                                class="bg-gradient-to-br from-slate-blue to-muted-teal text-white rounded-2xl p-8 space-y-6 shadow-xl">
+                                <div class="flex justify-between items-center pb-4 border-b border-white/20">
+                                    <span class="font-semibold text-lg">Bank:</span>
+                                    <span class="font-bold">First National Bank</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-4 border-b border-white/20">
+                                    <span class="font-semibold text-lg">Account:</span>
+                                    <span class="font-mono font-bold text-xl">63173258162</span>
+                                </div>
+                                <div class="flex justify-between items-center pb-4 border-b border-white/20">
+                                    <span class="font-semibold text-lg">Reference:</span>
+                                    <span class="font-bold">LIGHT + Your Name</span>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+                                    <p class="text-center text-mustard-gold font-bold text-lg">
+                                        💝 R150 = 1 Complete Care Package
+                                    </p>
+                                    <p class="text-center text-sm opacity-90 mt-1">
+                                        (Child + Caregiver)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Donation Options -->
+                        <div class="space-y-8">
+                            <h3 class="text-3xl font-bold text-slate-blue flex items-center gap-3">
+                                <span class="text-4xl">⚡</span> Quick Donate
+                            </h3>
+
+                            <!-- Donation Amount Buttons -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <button
+                                    class="group bg-gradient-to-br from-muted-orange to-mustard-gold hover:from-mustard-gold hover:to-muted-orange text-slate-blue font-bold py-6 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ripple card-3d">
+                                    <div class="text-3xl mb-2">📦</div>
+                                    <div class="text-lg">1 Box</div>
+                                    <div class="text-2xl font-black">R150</div>
+                                </button>
+                                <button
+                                    class="group bg-gradient-to-br from-muted-orange to-mustard-gold hover:from-mustard-gold hover:to-muted-orange text-slate-blue font-bold py-6 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ripple card-3d">
+                                    <div class="text-3xl mb-2">📦📦</div>
+                                    <div class="text-lg">2 Boxes</div>
+                                    <div class="text-2xl font-black">R300</div>
+                                </button>
+                                <button
+                                    class="group bg-gradient-to-br from-muted-orange to-mustard-gold hover:from-mustard-gold hover:to-muted-orange text-slate-blue font-bold py-6 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ripple card-3d">
+                                    <div class="text-3xl mb-2">📦📦📦</div>
+                                    <div class="text-lg">3 Boxes</div>
+                                    <div class="text-2xl font-black">R450</div>
+                                </button>
+                                <button
+                                    class="group bg-gradient-to-br from-slate-blue to-muted-teal hover:from-muted-teal hover:to-slate-blue text-white font-bold py-6 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ripple card-3d">
+                                    <div class="text-3xl mb-2">💎</div>
+                                    <div class="text-lg">Custom</div>
+                                    <div class="text-xl font-black">Amount</div>
+                                </button>
+                            </div>
+
+                            <!-- Progress Bar -->
+                            <div class="space-y-4 bg-white/50 backdrop-blur rounded-2xl p-6">
+                                <div class="flex justify-between text-slate-blue font-bold text-lg">
+                                    <span>📊 Boxes Sponsored</span>
+                                    <span>0 / 150</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-6 overflow-hidden shadow-inner">
+                                    <div class="bg-gradient-to-r from-festive-red via-muted-orange to-mustard-gold h-6 rounded-full transition-all duration-1000 ease-out flex items-center justify-end pr-2"
+                                        style="width: 0%">
+                                        <span class="text-white text-xs font-bold drop-shadow">0%</span>
+                                    </div>
+                                </div>
+                                <p class="text-center text-slate-blue/70 text-sm">
+                                    Help us reach our goal of 150 boxes this Christmas! 🎄
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
